@@ -1,0 +1,473 @@
+\hypertarget{class_e_z_1_1_datetime}{}\doxysection{EZ\+::Datetime Class Reference}
+\label{class_e_z_1_1_datetime}\index{EZ::Datetime@{EZ::Datetime}}
+
+
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object.  
+
+
+
+
+{\ttfamily \#include $<$datetime.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime_a9e9a2bfb365ba01b895fc4149cd736b0}{Datetime}} (const std\+::string \&timestamp, const std\+::string \&format, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a2a5082d7efefaa8c5ffafcc99ce966ab}\label{class_e_z_1_1_datetime_a2a5082d7efefaa8c5ffafcc99ce966ab}} 
+{\bfseries Datetime} (const std\+::string \&timestamp, const char $\ast$format, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_ae22402b48bd5299230ec2ba92a3f44ee}\label{class_e_z_1_1_datetime_ae22402b48bd5299230ec2ba92a3f44ee}} 
+{\bfseries Datetime} (const char $\ast$timestamp, const std\+::string \&format, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_aa81034f91142072c0a94b94a0d0788b5}\label{class_e_z_1_1_datetime_aa81034f91142072c0a94b94a0d0788b5}} 
+{\bfseries Datetime} (const char $\ast$timestamp, const char $\ast$format, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime_a1bed096290e39bb4293036445b5d9ac4}{Datetime}} (const std\+::string \&timestamp, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a588d4955eef31b32d50505f000472db5}\label{class_e_z_1_1_datetime_a588d4955eef31b32d50505f000472db5}} 
+{\bfseries Datetime} (const char $\ast$timestamp, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime_a15ea32ff85c4dbf4f3a15795517be1f5}{Datetime}} (struct tm \mbox{\hyperlink{class_e_z_1_1_datetime_a6f560a42c7979913fdcafce0d6a22b8d}{datetime}}, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime_ac538e9d711ded0d44c4fb6bf15b2db34}{Datetime}} (const time\+\_\+t \&\mbox{\hyperlink{class_e_z_1_1_datetime_af551e8d88a7dd1ca77a830b6d4c1905d}{unix\+Time}}=0, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a5e16025a273896da95a36f66751c52d2}\label{class_e_z_1_1_datetime_a5e16025a273896da95a36f66751c52d2}} 
+{\bfseries Datetime} (const \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \&original)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime_a8252c6dc45f0d9f88b135663fd7d3f9d}{Datetime}} (const int \&\mbox{\hyperlink{class_e_z_1_1_datetime_a7dba3dca941135ba3da6780643347710}{year}}, const int \&mon, const int \&\mbox{\hyperlink{class_e_z_1_1_datetime_a57587d48c0dd51c35fe9e12070f3c5a2}{day}}, const int \&\mbox{\hyperlink{class_e_z_1_1_datetime_ab679b30ec6ae936d9f2560845bb6f9b4}{hour}}, const int \&min, const int \&\mbox{\hyperlink{class_e_z_1_1_datetime_a898abb1ccd396fa2a66c95551ef83e34}{sec}}, const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+void \mbox{\hyperlink{class_e_z_1_1_datetime_a3bb61a2ff0e179a6f1ef8ceffbbae4a2}{set\+Is\+UTC}} (const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}})
+\item 
+bool \mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}} () const
+\item 
+struct tm \mbox{\hyperlink{class_e_z_1_1_datetime_a7131e48297cbb63ff4682778e4c979b0}{struct\+Tm}} () const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_aed835863a97c8b631ba577673adce619}{str}} () const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_a27ade0375c4a92ce5b1fa4a204b7c5c5}{str}} (const std\+::string \&format) const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_aee19ca489f09c63d39aa31a1f24898ed}{str}} (const char $\ast$format) const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_a6f560a42c7979913fdcafce0d6a22b8d}{datetime}} () const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_a1c4be5e91dc0de7dd38aaed93caf946d}{date}} () const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_a6fb8d3f5de5ad86f9a85c1e47cbb331a}{times\+Ofday}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a898abb1ccd396fa2a66c95551ef83e34}{sec}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a98f74d7bd8bca0316c7a59f145fe257f}{minute}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_ab679b30ec6ae936d9f2560845bb6f9b4}{hour}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a57587d48c0dd51c35fe9e12070f3c5a2}{day}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a6304ace0871cbd8a83f66ebc3c012de9}{month}} () const
+\item 
+long \mbox{\hyperlink{class_e_z_1_1_datetime_a7dba3dca941135ba3da6780643347710}{year}} () const
+\item 
+long long \mbox{\hyperlink{class_e_z_1_1_datetime_af551e8d88a7dd1ca77a830b6d4c1905d}{unix\+Time}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a62a2c255715ea7a55c96cf5f6d22138a}{days\+Of\+Week}} () const
+\item 
+std\+::string \mbox{\hyperlink{class_e_z_1_1_datetime_ab6f2438e8e4fd5ef306a92baecaba44a}{timezone}} () const
+\item 
+int \mbox{\hyperlink{class_e_z_1_1_datetime_a3c78ef9996588713d8114f68823a6b17}{is\+Dst}} () const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_e_z_1_1_datetime_aa9386b456fde06b28f808a8bcc5d4528}{to\+Vector}} () const
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \mbox{\hyperlink{class_e_z_1_1_datetime_ac7b66a6b708e11b7a5d2ac1fc742a070}{operator+}} (const long long \&right) const
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \mbox{\hyperlink{class_e_z_1_1_datetime_a840185af713e4b2258e1811f0aa4ebe9}{operator+}} (const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&right) const
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a9f2c6f5878b62a459ca33e2cfbf43453}\label{class_e_z_1_1_datetime_a9f2c6f5878b62a459ca33e2cfbf43453}} 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} {\bfseries operator-\/} (const long long \&right) const
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a665e98f830c40ee3356e0cebd09c5544}\label{class_e_z_1_1_datetime_a665e98f830c40ee3356e0cebd09c5544}} 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} {\bfseries operator-\/} (const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&right) const
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a5f914fa8ad877de905a6290856eb10ab}\label{class_e_z_1_1_datetime_a5f914fa8ad877de905a6290856eb10ab}} 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \&right\+\_\+t)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \& \mbox{\hyperlink{class_e_z_1_1_datetime_a92f9c8ff2a7d5395a014bd9be7ec0073}{operator+=}} (const long long \&right)
+\item 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \& \mbox{\hyperlink{class_e_z_1_1_datetime_a7a0044e79b8d0b47b064664f0e7f896c}{operator+=}} (const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&right)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_af71a8dcaa62c5f6dbbd56368370d9448}\label{class_e_z_1_1_datetime_af71a8dcaa62c5f6dbbd56368370d9448}} 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \& {\bfseries operator-\/=} (const long long \&right)
+\item 
+\mbox{\Hypertarget{class_e_z_1_1_datetime_ad0029613f67d80e90b29e4295ace55d6}\label{class_e_z_1_1_datetime_ad0029613f67d80e90b29e4295ace55d6}} 
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \& {\bfseries operator-\/=} (const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&right)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \mbox{\hyperlink{class_e_z_1_1_datetime_ac105e03cc49501f6c73a9ff836a668cc}{now}} (const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \mbox{\hyperlink{class_e_z_1_1_datetime_ade9ecdf6f3f01a15b1f8f71f9495aadf}{minimum}} (const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\item 
+static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} \mbox{\hyperlink{class_e_z_1_1_datetime_ae64dcebe237b91852b3109d9689597f5}{maximum}} (const bool \&\mbox{\hyperlink{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}{is\+UTC}}=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object. 
+
+A datetime object handles date and time information. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a9e9a2bfb365ba01b895fc4149cd736b0}\label{class_e_z_1_1_datetime_a9e9a2bfb365ba01b895fc4149cd736b0}} 
+\index{EZ::Datetime@{EZ::Datetime}!Datetime@{Datetime}}
+\index{Datetime@{Datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{Datetime()}{Datetime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily EZ\+::\+Datetime\+::\+Datetime (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{timestamp,  }\item[{const std\+::string \&}]{format,  }\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em timestamp} & ex\+: 2021/3/8 0\+:00\+:15 ~\newline
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em format} & ex\+: Y/m/d H\+:M\+:S ~\newline
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied.\\
+\hline
+\end{DoxyParams}
+Timestamp and format must have same delimiters.~\newline
+ ex\+: auto time = \mbox{\hyperlink{class_e_z_1_1_datetime}{EZ\+::\+Datetime}}(\char`\"{}2021/3/8 0\+:00\+:15\char`\"{}, \char`\"{}\%\+Y/\%m/\%d \%\+H\+:\%\+M\+:\%\+S\char`\"{}, true); \mbox{\Hypertarget{class_e_z_1_1_datetime_a1bed096290e39bb4293036445b5d9ac4}\label{class_e_z_1_1_datetime_a1bed096290e39bb4293036445b5d9ac4}} 
+\index{EZ::Datetime@{EZ::Datetime}!Datetime@{Datetime}}
+\index{Datetime@{Datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{Datetime()}{Datetime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily EZ\+::\+Datetime\+::\+Datetime (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{timestamp,  }\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em timestamp} & ex\+: 2021/3/8 0\+:00\+:15 ~\newline
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied.\\
+\hline
+\end{DoxyParams}
+Format of timestamp is must be \char`\"{}\%\+Y/\%m/\%d \%\+H\+:\%\+M\+:\%\+S\char`\"{}. ~\newline
+ ex\+: auto time = \mbox{\hyperlink{class_e_z_1_1_datetime}{EZ\+::\+Datetime}}(\char`\"{}2021/3/8 0\+:00\+:15\char`\"{}, true); \mbox{\Hypertarget{class_e_z_1_1_datetime_a15ea32ff85c4dbf4f3a15795517be1f5}\label{class_e_z_1_1_datetime_a15ea32ff85c4dbf4f3a15795517be1f5}} 
+\index{EZ::Datetime@{EZ::Datetime}!Datetime@{Datetime}}
+\index{Datetime@{Datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{Datetime()}{Datetime()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily EZ\+::\+Datetime\+::\+Datetime (\begin{DoxyParamCaption}\item[{struct tm}]{datetime,  }\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em datetime} & struct tm \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_ac538e9d711ded0d44c4fb6bf15b2db34}\label{class_e_z_1_1_datetime_ac538e9d711ded0d44c4fb6bf15b2db34}} 
+\index{EZ::Datetime@{EZ::Datetime}!Datetime@{Datetime}}
+\index{Datetime@{Datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{Datetime()}{Datetime()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily EZ\+::\+Datetime\+::\+Datetime (\begin{DoxyParamCaption}\item[{const time\+\_\+t \&}]{unix\+Time = {\ttfamily 0},  }\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em unix\+Time=0} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a8252c6dc45f0d9f88b135663fd7d3f9d}\label{class_e_z_1_1_datetime_a8252c6dc45f0d9f88b135663fd7d3f9d}} 
+\index{EZ::Datetime@{EZ::Datetime}!Datetime@{Datetime}}
+\index{Datetime@{Datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{Datetime()}{Datetime()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily EZ\+::\+Datetime\+::\+Datetime (\begin{DoxyParamCaption}\item[{const int \&}]{year,  }\item[{const int \&}]{mon,  }\item[{const int \&}]{day,  }\item[{const int \&}]{hour,  }\item[{const int \&}]{min,  }\item[{const int \&}]{sec,  }\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em year} & (1970 $\sim$ 2999) \\
+\hline
+\mbox{\texttt{ in}}  & {\em mon} & (1 $\sim$ 12) \\
+\hline
+\mbox{\texttt{ in}}  & {\em day} & (1 $\sim$ 31) \\
+\hline
+\mbox{\texttt{ in}}  & {\em hour} & (0 $\sim$ 23) \\
+\hline
+\mbox{\texttt{ in}}  & {\em min} & (0 $\sim$ 59) \\
+\hline
+\mbox{\texttt{ in}}  & {\em sec} & (0 $\sim$ 59) \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied.\\
+\hline
+\end{DoxyParams}
+ex\+: 2021/1/1 13\+:00\+:00 UTC =$>$ \mbox{\hyperlink{class_e_z_1_1_datetime}{EZ\+::\+Datetime(2021, 1, 1, 13, 0, 0, true)}}; 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a1c4be5e91dc0de7dd38aaed93caf946d}\label{class_e_z_1_1_datetime_a1c4be5e91dc0de7dd38aaed93caf946d}} 
+\index{EZ::Datetime@{EZ::Datetime}!date@{date}}
+\index{date@{date}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+日付を文字列で返却する。フォーマットは固定。 ~\newline
+Return the date as a string. Output format is fixed. ~\newline
+\begin{DoxyReturn}{Returns}
+strings of timestamp
+\end{DoxyReturn}
+ex\+: 2021/1/1
+
+This function is same as using str(\char`\"{}\%\+Y/\%m/\%d\char`\"{}) \mbox{\Hypertarget{class_e_z_1_1_datetime_a6f560a42c7979913fdcafce0d6a22b8d}\label{class_e_z_1_1_datetime_a6f560a42c7979913fdcafce0d6a22b8d}} 
+\index{EZ::Datetime@{EZ::Datetime}!datetime@{datetime}}
+\index{datetime@{datetime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{datetime()}{datetime()}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::datetime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+日時を文字列で返却する。フォーマットは固定。 ~\newline
+Return the datetime as a string. Output format is fixed. ~\newline
+
+
+ex\+: 2021/1/1 13\+:00\+:00
+
+This function is same as using str(\char`\"{}\%\+Y/\%m/\%d \%\+H\+:\%\+M\+:\%\+S\char`\"{}) \mbox{\Hypertarget{class_e_z_1_1_datetime_a57587d48c0dd51c35fe9e12070f3c5a2}\label{class_e_z_1_1_datetime_a57587d48c0dd51c35fe9e12070f3c5a2}} 
+\index{EZ::Datetime@{EZ::Datetime}!day@{day}}
+\index{day@{day}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{day()}{day()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+日にちを整数値で返却する ~\newline
+Return the number of day as an integer value. \mbox{\Hypertarget{class_e_z_1_1_datetime_a62a2c255715ea7a55c96cf5f6d22138a}\label{class_e_z_1_1_datetime_a62a2c255715ea7a55c96cf5f6d22138a}} 
+\index{EZ::Datetime@{EZ::Datetime}!daysOfWeek@{daysOfWeek}}
+\index{daysOfWeek@{daysOfWeek}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{daysOfWeek()}{daysOfWeek()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::days\+Of\+Week (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+曜日を整数値で返却する ~\newline
+Return the day of the week as an integer value. \begin{DoxyReturn}{Returns}
+0 =$>$ Sunday, 1 =$>$ Monday, ..., 6 =$>$ Saturday 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_ab679b30ec6ae936d9f2560845bb6f9b4}\label{class_e_z_1_1_datetime_ab679b30ec6ae936d9f2560845bb6f9b4}} 
+\index{EZ::Datetime@{EZ::Datetime}!hour@{hour}}
+\index{hour@{hour}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{hour()}{hour()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+時刻値を整数値で返却する ~\newline
+Return the number of hours as an integer value. \mbox{\Hypertarget{class_e_z_1_1_datetime_a3c78ef9996588713d8114f68823a6b17}\label{class_e_z_1_1_datetime_a3c78ef9996588713d8114f68823a6b17}} 
+\index{EZ::Datetime@{EZ::Datetime}!isDst@{isDst}}
+\index{isDst@{isDst}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{isDst()}{isDst()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::is\+Dst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+サマータイムフラグを返却する ~\newline
+Return the summer time flag. \begin{DoxyReturn}{Returns}
+number of is\+Dst~\newline
+
+\end{DoxyReturn}
+0 =$>$ Summer time is disabled.~\newline
+ 1 =$>$ Summer time is enabled.~\newline
+ negative =$>$ Depends on your computer. ~\newline
+Specification of return value is same as \char`\"{}struct tm\char`\"{}. See also official documentation of struct tm. \mbox{\Hypertarget{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}\label{class_e_z_1_1_datetime_abbbd0111450917bf00387f2c1022208e}} 
+\index{EZ::Datetime@{EZ::Datetime}!isUTC@{isUTC}}
+\index{isUTC@{isUTC}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{isUTC()}{isUTC()}}
+{\footnotesize\ttfamily bool EZ\+::\+Datetime\+::is\+UTC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+インスタンスに設定されたタイムゾーンが\+UTCならtrueを、現地時間ならfalseを返却する。 ~\newline
+Return true if the timezone of the instance is UTC. False if local time. ~\newline
+
+
+See also~\newline
+ set\+Is\+Utc(const bool\& is\+UTC = false) \mbox{\Hypertarget{class_e_z_1_1_datetime_ae64dcebe237b91852b3109d9689597f5}\label{class_e_z_1_1_datetime_ae64dcebe237b91852b3109d9689597f5}} 
+\index{EZ::Datetime@{EZ::Datetime}!maximum@{maximum}}
+\index{maximum@{maximum}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{maximum()}{maximum()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} EZ\+::\+Datetime\+::maximum (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+処理系で表現可能な最新の日付を返す ~\newline
+Returns the newest date that can be handled with this library. \mbox{\Hypertarget{class_e_z_1_1_datetime_ade9ecdf6f3f01a15b1f8f71f9495aadf}\label{class_e_z_1_1_datetime_ade9ecdf6f3f01a15b1f8f71f9495aadf}} 
+\index{EZ::Datetime@{EZ::Datetime}!minimum@{minimum}}
+\index{minimum@{minimum}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{minimum()}{minimum()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} EZ\+::\+Datetime\+::minimum (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+処理系で表現可能な最古の日付を返す ~\newline
+Returns the oldest date that can be handled with this library. \mbox{\Hypertarget{class_e_z_1_1_datetime_a98f74d7bd8bca0316c7a59f145fe257f}\label{class_e_z_1_1_datetime_a98f74d7bd8bca0316c7a59f145fe257f}} 
+\index{EZ::Datetime@{EZ::Datetime}!minute@{minute}}
+\index{minute@{minute}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{minute()}{minute()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+分値を整数値で返却する ~\newline
+Return the number of minutes as an integer value. \mbox{\Hypertarget{class_e_z_1_1_datetime_a6304ace0871cbd8a83f66ebc3c012de9}\label{class_e_z_1_1_datetime_a6304ace0871cbd8a83f66ebc3c012de9}} 
+\index{EZ::Datetime@{EZ::Datetime}!month@{month}}
+\index{month@{month}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{month()}{month()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+月数を整数値で返却する ~\newline
+Return the number of month as an integer value. \mbox{\Hypertarget{class_e_z_1_1_datetime_ac105e03cc49501f6c73a9ff836a668cc}\label{class_e_z_1_1_datetime_ac105e03cc49501f6c73a9ff836a668cc}} 
+\index{EZ::Datetime@{EZ::Datetime}!now@{now}}
+\index{now@{now}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} EZ\+::\+Datetime\+::now (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+UTC = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+コンピュータの現在時刻を取得する ~\newline
+Get the current time of the computer. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em is\+UTC=false} & if true, UTC is set to timezone.~\newline
+ if false, local time is applied.\\
+\hline
+\end{DoxyParams}
+ex\+: auto now = EZ\+::\+Datetime\+::current\+TIme(true); \mbox{\Hypertarget{class_e_z_1_1_datetime_ac7b66a6b708e11b7a5d2ac1fc742a070}\label{class_e_z_1_1_datetime_ac7b66a6b708e11b7a5d2ac1fc742a070}} 
+\index{EZ::Datetime@{EZ::Datetime}!operator+@{operator+}}
+\index{operator+@{operator+}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} EZ\+::\+Datetime\+::operator+ (\begin{DoxyParamCaption}\item[{const long long \&}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+ある日付に、指定の秒数を足した後の日付を返却する。 ~\newline
+Return the new \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object after adding the specified number of seconds to a \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object. \mbox{\Hypertarget{class_e_z_1_1_datetime_a840185af713e4b2258e1811f0aa4ebe9}\label{class_e_z_1_1_datetime_a840185af713e4b2258e1811f0aa4ebe9}} 
+\index{EZ::Datetime@{EZ::Datetime}!operator+@{operator+}}
+\index{operator+@{operator+}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} EZ\+::\+Datetime\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+ある日付に、\+Time\+Deltaを足した後の日付を返却する。 ~\newline
+Return the new \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object after adding the specified \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} object to a \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object. \mbox{\Hypertarget{class_e_z_1_1_datetime_a92f9c8ff2a7d5395a014bd9be7ec0073}\label{class_e_z_1_1_datetime_a92f9c8ff2a7d5395a014bd9be7ec0073}} 
+\index{EZ::Datetime@{EZ::Datetime}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}}\& EZ\+::\+Datetime\+::operator+= (\begin{DoxyParamCaption}\item[{const long long \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+ある日付を、指定の秒数だけ進める ~\newline
+Add the specified number of seconds to a \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object. \mbox{\Hypertarget{class_e_z_1_1_datetime_a7a0044e79b8d0b47b064664f0e7f896c}\label{class_e_z_1_1_datetime_a7a0044e79b8d0b47b064664f0e7f896c}} 
+\index{EZ::Datetime@{EZ::Datetime}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}}\& EZ\+::\+Datetime\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+ある日付を\+Time\+Deltaだけ進める ~\newline
+Add the specified \mbox{\hyperlink{class_e_z_1_1_time_delta}{Time\+Delta}} object to a \mbox{\hyperlink{class_e_z_1_1_datetime}{Datetime}} object. \mbox{\Hypertarget{class_e_z_1_1_datetime_a898abb1ccd396fa2a66c95551ef83e34}\label{class_e_z_1_1_datetime_a898abb1ccd396fa2a66c95551ef83e34}} 
+\index{EZ::Datetime@{EZ::Datetime}!sec@{sec}}
+\index{sec@{sec}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{sec()}{sec()}}
+{\footnotesize\ttfamily int EZ\+::\+Datetime\+::sec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+秒数を整数値で返却する ~\newline
+Return the number of seconds as an integer value. \mbox{\Hypertarget{class_e_z_1_1_datetime_a3bb61a2ff0e179a6f1ef8ceffbbae4a2}\label{class_e_z_1_1_datetime_a3bb61a2ff0e179a6f1ef8ceffbbae4a2}} 
+\index{EZ::Datetime@{EZ::Datetime}!setIsUTC@{setIsUTC}}
+\index{setIsUTC@{setIsUTC}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{setIsUTC()}{setIsUTC()}}
+{\footnotesize\ttfamily void EZ\+::\+Datetime\+::set\+Is\+UTC (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+UTC }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+表示するタイムゾーンを\+UTCにするか現地時刻にするか指定する。~\newline
+Set timezone of instance (UTC or loacl time). ~\newline
+is\+UTC = false \+: Express timestamp as local\+Time.~\newline
+is\+UTC = true \+: Express timestamp as UTC.~\newline
+\mbox{\Hypertarget{class_e_z_1_1_datetime_aed835863a97c8b631ba577673adce619}\label{class_e_z_1_1_datetime_aed835863a97c8b631ba577673adce619}} 
+\index{EZ::Datetime@{EZ::Datetime}!str@{str}}
+\index{str@{str}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{str()}{str()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+タイムスタンプを文字列で返却する。出力文字列はデフォルトのフォーマットで返却される。 ~\newline
+Return the timestamp as a string. The output format is default format. ~\newline
+\begin{DoxyReturn}{Returns}
+strings of timestamp ~\newline
+ex\+: 2021/1/1 13\+:00\+:00 UTC 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_aee19ca489f09c63d39aa31a1f24898ed}\label{class_e_z_1_1_datetime_aee19ca489f09c63d39aa31a1f24898ed}} 
+\index{EZ::Datetime@{EZ::Datetime}!str@{str}}
+\index{str@{str}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{str()}{str()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::str (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+タイムスタンプを文字列で返却する。出力フォーマットは引数で指定する。 ~\newline
+Return the timestamp as a string. Output format is specified by argument. ~\newline
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em format} & strings with format specifier~\newline
+ex\+: format = \char`\"{}\%\+Y/\%m/\%d\+\_\+\%\+H\+:\%\+M\+:\%\+S\char`\"{} =$>$ 2021/1/1\+\_\+13\+:00\+:00 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a27ade0375c4a92ce5b1fa4a204b7c5c5}\label{class_e_z_1_1_datetime_a27ade0375c4a92ce5b1fa4a204b7c5c5}} 
+\index{EZ::Datetime@{EZ::Datetime}!str@{str}}
+\index{str@{str}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{str()}{str()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{format }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+タイムスタンプを文字列で返却する。出力フォーマットは引数で指定する。 ~\newline
+Return the timestamp as a string. Output format is specified by argument. ~\newline
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em format} & strings with format specifier ~\newline
+ex\+: format = \char`\"{}\%\+Y/\%m/\%d\+\_\+\%\+H\+:\%\+M\+:\%\+S\char`\"{} =$>$ 2021/1/1\+\_\+13\+:00\+:00 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a7131e48297cbb63ff4682778e4c979b0}\label{class_e_z_1_1_datetime_a7131e48297cbb63ff4682778e4c979b0}} 
+\index{EZ::Datetime@{EZ::Datetime}!structTm@{structTm}}
+\index{structTm@{structTm}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{structTm()}{structTm()}}
+{\footnotesize\ttfamily struct tm EZ\+::\+Datetime\+::struct\+Tm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+タイムスタンプをstruct tmで返却する ~\newline
+Return the timestamp as a \char`\"{}struct tm\char`\"{}. ~\newline
+\mbox{\Hypertarget{class_e_z_1_1_datetime_a6fb8d3f5de5ad86f9a85c1e47cbb331a}\label{class_e_z_1_1_datetime_a6fb8d3f5de5ad86f9a85c1e47cbb331a}} 
+\index{EZ::Datetime@{EZ::Datetime}!timesOfday@{timesOfday}}
+\index{timesOfday@{timesOfday}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{timesOfday()}{timesOfday()}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::times\+Ofday (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+時刻を文字列で返却する。フォーマットは固定。 ~\newline
+Return the time as a string. Output format is fixed. ~\newline
+\begin{DoxyReturn}{Returns}
+strings of timestamp
+\end{DoxyReturn}
+ex\+: 13\+:00\+:00
+
+This function is same as using str(\char`\"{}\%\+H\+:\%\+M\+:\%\+S\char`\"{}) \mbox{\Hypertarget{class_e_z_1_1_datetime_ab6f2438e8e4fd5ef306a92baecaba44a}\label{class_e_z_1_1_datetime_ab6f2438e8e4fd5ef306a92baecaba44a}} 
+\index{EZ::Datetime@{EZ::Datetime}!timezone@{timezone}}
+\index{timezone@{timezone}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{timezone()}{timezone()}}
+{\footnotesize\ttfamily std\+::string EZ\+::\+Datetime\+::timezone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+週番号を返却する ~\newline
+Return the week number as an integer value. ~\newline
+タイムゾーンを返却する ~\newline
+Return the timezone of the instance. ~\newline
+
+
+unix, mac\+: UTC, JST, EST, ...etc~\newline
+
+
+Windows\+: UTC, 90min from UTC, -\/270 min from UTC, ...etc \mbox{\Hypertarget{class_e_z_1_1_datetime_aa9386b456fde06b28f808a8bcc5d4528}\label{class_e_z_1_1_datetime_aa9386b456fde06b28f808a8bcc5d4528}} 
+\index{EZ::Datetime@{EZ::Datetime}!toVector@{toVector}}
+\index{toVector@{toVector}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{toVector()}{toVector()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ EZ\+::\+Datetime\+::to\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\{年, 月, 日, 時, 分, 秒\} の6つの要素をもつvectorを返却する ~\newline
+Returns a vector with 6 elements \{year, month, day, hour, minute, second\}.
+
+ex\+: \{2021,1,1,23,59,59\} \mbox{\Hypertarget{class_e_z_1_1_datetime_af551e8d88a7dd1ca77a830b6d4c1905d}\label{class_e_z_1_1_datetime_af551e8d88a7dd1ca77a830b6d4c1905d}} 
+\index{EZ::Datetime@{EZ::Datetime}!unixTime@{unixTime}}
+\index{unixTime@{unixTime}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{unixTime()}{unixTime()}}
+{\footnotesize\ttfamily long long EZ\+::\+Datetime\+::unix\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+日時を\+Unix秒で返却する ~\newline
+Return the datetime in unix seconds. \mbox{\Hypertarget{class_e_z_1_1_datetime_a7dba3dca941135ba3da6780643347710}\label{class_e_z_1_1_datetime_a7dba3dca941135ba3da6780643347710}} 
+\index{EZ::Datetime@{EZ::Datetime}!year@{year}}
+\index{year@{year}!EZ::Datetime@{EZ::Datetime}}
+\doxysubsubsection{\texorpdfstring{year()}{year()}}
+{\footnotesize\ttfamily long EZ\+::\+Datetime\+::year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+西暦を整数値で返却する ~\newline
+Return the year as an integer value. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/datetime.\+h\end{DoxyCompactItemize}
