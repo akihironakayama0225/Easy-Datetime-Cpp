@@ -1,5 +1,5 @@
 # Eazy Datetime (C++)
-## [>> Switch to Japanese(日本語版)](https://qiita.com/drafts)
+## [>> Switch to Japanese(日本語版)](https://qiita.com/NA_simple/items/ec88eda847eb1dd8f8b7)
 
 
 ## Abstruct
@@ -54,7 +54,7 @@ Therefore, I made a library wrapping struct tm and helping you to handle datetim
 /* Namespace to use */
 // using namespace EZ;
 
-int main ()
+int main()
 {
 	try {
 		// ----------------- //
@@ -96,9 +96,9 @@ int main ()
 ```C++:sample.cpp
 	// example #1
 	auto date1 = EZ::Datetime("2021/1/1 0:00:00" /*, false*/);
-    // example #2
+	// example #2
 	auto date2 = EZ::Datetime("2021/1/1 0:00:00", "%Y/%m/%d %H:%M:%S" /*, false*/);
-    // example #3
+	// example #3
 	auto date3 = EZ::Datetime(2022,1,1,0,0,0 /*, false*/);
 
 	// Show timestamp using stream
@@ -146,7 +146,7 @@ long 	year()         // Return only "year".
 int 	daysOfWeek()   // Return the day number starting on Sunday
 
 // Returns the datetime as a vector with 6 elements {year, month, day, hour, minute, second}.
-std::vector<long long> 	toVector ()
+std::vector<long long> 	toVector()
 ```
 
 ### Subtraction between Datetimes
@@ -194,7 +194,7 @@ long long totalDays()     // Return the value in total days (truncate less than 
 long long totalWeeks()    // Return the value in total weeks (truncate less than 7 days).
 
 // Return the std::vector consisted of (day, hour, minute, second).
-std::vector<long long> 	toVector ()
+std::vector<long long> 	toVector()
 ```
 
 ### Arithmetic operations of TimeDelta
@@ -296,11 +296,9 @@ std::vector<long long> 	toVector ()
 </div></details>
 
 
-
 ## Links
-- Eazy datetime official docs. ((Under construction))
-
-- Japanese documentation(日本語版)
+- [Detailed class list](https://akihironakayama0225.github.io/Easy-Datetime-Cpp/annotated.html)
+- [Japanese documentation(日本語版)](https://qiita.com/NA_simple/items/ec88eda847eb1dd8f8b7)
 
 
 #### Thank you for seeing this docs until the end. I would be happy if you could use this library.
