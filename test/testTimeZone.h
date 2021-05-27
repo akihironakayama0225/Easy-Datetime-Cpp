@@ -123,7 +123,7 @@ TEST_F(TestMyTimeZone, StructTm)
 	auto a = timeLocal.timezone();
 	auto b = timeUTC.timezone();
 	std::cout << timeLocal.timezone() << " " << timeUTC.timezone() << std::endl;
-    if (timeLocal.timezone() == timeUTC.timezone())
+    if (timeLocal.timezone() == "UTC" || timeLocal.timezone() == "GMT" || timeLocal.timezone() == "(0min from UTC)")
     {
         EXPECT_EQ(timeLocal.unixTime(), timeUTC.unixTime());
         EXPECT_EQ(timeLocal, timeUTC);
@@ -146,7 +146,7 @@ TEST_F(TestMyTimeZone, TIME_T)
 
     EXPECT_EQ(636632775, timeUTC);
     EXPECT_EQ("1990/03/05 10:26:15", timeUTC.str("%Y/%m/%d %H:%M:%S"));
-    if (timeLocal.timezone() == timeUTC.timezone())
+    if (timeLocal.timezone() == "UTC" || timeLocal.timezone() == "GMT" || timeLocal.timezone() == "(0min from UTC)")
     {
         EXPECT_EQ(timeLocal.unixTime(), timeUTC.unixTime());
         EXPECT_EQ(timeLocal, timeUTC);
@@ -330,8 +330,11 @@ TEST_F(TestMyTimeZone, TimeZoneEquality)
     auto t41 = Datetime::now();
     auto t42 = Datetime::now(true);
 
-    EXPECT_NE(t11, t12);
+    if (t11.timezone() != "UTC" && t11.timezone() != "GMT" && t11.timezone() != "(0min from UTC)"){
+        EXPECT_NE(t11, t12);
+        EXPECT_NE(t31, t32);
+    }
+
     EXPECT_EQ(t21, t22);
-    EXPECT_NE(t31, t32);
     EXPECT_EQ(t41, t42);
 }

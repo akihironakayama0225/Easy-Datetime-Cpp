@@ -1,0 +1,89 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.2.0
+
+jobs:
+  test-on-ubuntu:
+    docker:
+      - image: nkym0225/cmake-ubuntu-1804:latest
+    working_directory: ~/project
+    steps:
+      - checkout
+      - setup_remote_docker:
+          # could not use in Free plan.
+          docker_layer_caching: true
+      - run:
+          command: pwd      
+      - run:
+          command: ls
+      - run:
+          name: "Build & run GoogleTest"
+          command: |
+              mkdir build
+              cd build
+              cmake ..
+              make test -j8
+              ./test
+
+  test-on-windows:
+    executor: win/default
+    working_directory: C:\Users\circleci\project
+    steps:
+      - checkout:
+          path: C:\Users\circleci\project
+
+      ## 実行環境の保存&復元 ##
+      - restore_cache:
+          # 下記キーに紐付けられたディレクトリを復元する
+          keys:
+              - 2-20210516-cmake
+      - run:
+          command:
+              pwd
+          shell: powershell.exe
+
+      - run:
+          name: "Install CMake 3.20.2"
+          command: |
+              $result = (Test-Path "C:\Users\circleci\project\cmake-3.20.2-windows-x86_64")
+              echo $result
+              if($result){
+                Write-Host "Folder exists, skip downloads."
+              }else{
+                Write-Host "File Not exists."
+                Invoke-WebRequest -Uri "https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2-windows-x86_64.zip"  -Outfile ".\cmake-3.20.2.zip"
+                Expand-Archive -Path .\cmake-3.20.2.zip -DestinationPath .
+              }
+          shell: powershell.exe
+
+      - save_cache:
+          # 下記ディレクトリを保存しておく
+          paths:
+            - C:\Users\circleci\project\cmake-3.20.2-windows-x86_64
+          key: 2-20210516-cmake
+
+      - run:
+          name: "Setup C++ project"
+          command: |
+              mkdir build
+              cd build
+              C:\Users\circleci\project\cmake-3.20.2-windows-x86_64\bin\cmake.exe ..
+          shell: powershell.exe
+
+      - run:
+          name: "Build GoogleTest"
+          command: |
+              msbuild.exe C:\Users\circleci\project\build\test.vcxproj -p:Configuration=Release
+
+      - run:
+          name: "Run GoogleTest"
+          command:
+              C:\Users\circleci\project\build\Release\test.exe
+
+
+workflows:
+  test: 
+    jobs:
+      - test-on-ubuntu
+      - test-on-windows

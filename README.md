@@ -8,10 +8,10 @@
 
 
 ## Introduction
-Time calculation in C++ often using `struct tm`. However, struct tm has some parts that programmers have to pay attention to, for example year begins from 1900 and month begins from 0 month.
-
+`struct tm` is often used for time calculation in C++.
+However, struct tm has some parts that programmers have to pay attention to, for example year begins from 1900 and month begins from 0.
 Therefore, I made a library wrapping struct tm and helping you to handle datetime easily.
- It is Named `Easy Datetime` and provide the following simple functions.
+It is Named `Easy Datetime` and provides the following simple functions.
 
 - Functions list
     - Datetime representation and calculation
@@ -146,7 +146,7 @@ long 	year()         // Return only "year".
 int 	daysOfWeek()   // Return the day number starting on Sunday
 
 // Returns the datetime as a vector with 6 elements {year, month, day, hour, minute, second}.
-std::vector<long long> 	toVector()
+std::vector<long long> toVector()
 ```
 
 ### Subtraction between Datetimes
@@ -194,7 +194,7 @@ long long totalDays()     // Return the value in total days (truncate less than 
 long long totalWeeks()    // Return the value in total weeks (truncate less than 7 days).
 
 // Return the std::vector consisted of (day, hour, minute, second).
-std::vector<long long> 	toVector()
+std::vector<long long> toVector()
 ```
 
 ### Arithmetic operations of TimeDelta
@@ -259,7 +259,7 @@ std::vector<long long> 	toVector()
 
 <details><summary>Q4. Is this library able to handle fractional seconds ?</summary><div>
 
-- It does not support fractional seconds. Fractional seconds are truncated and treated as integer seconds.
+- NO. It does not support fractional seconds. Fractional seconds are truncated and treated as integer seconds.
 </div></details>
 
 <details><summary>Q5. Are leap years and leap seconds taken into account ?</summary><div>

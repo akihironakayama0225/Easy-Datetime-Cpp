@@ -237,7 +237,6 @@ TEST_F(TestDatetime, InputEach_YmdHMS)
     auto t12 = Datetime(2021, 1, 1, 0, 0, 0, true);
     auto t2 = Datetime("2021/1/1 0:0:00", "%Y/%m/%d %H:%M:%S");
     EXPECT_EQ(t1, t2);
-    EXPECT_NE(t11, t12);
     EXPECT_EQ(t1.isUTC(), false);
     EXPECT_EQ(t11.isUTC(), false);
     EXPECT_EQ(t12.isUTC(), true);
